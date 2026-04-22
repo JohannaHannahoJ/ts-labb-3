@@ -1,4 +1,8 @@
-<nav>
+
+<header id="main-header">
+  <h1>Min Angular-labb</h1>
+  
+  <nav>
     <ul>
         <li><a routerLink="hem" routerLinkActive="current">Startsida</a></li>
         <li><a routerLink="omvandlare" routerLinkActive="current">Omvandlare</a></li>
@@ -6,4 +10,11 @@
     </ul>
 </nav>
 
-<router-outlet />
+</header>
+
+<main>
+  <router-outlet />
+</main>
+<footer>
+  <p>© joha2102@student.miun.se</p>
+</footer>
