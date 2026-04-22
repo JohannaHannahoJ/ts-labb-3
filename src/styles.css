@@ -1,1 +1,98 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #0A1B26;
+    --bg: #A4B5BF;
+    --piff: #A66249;
+    --wakeup: #73071B;
+    --harmony: #224459;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+app-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--bg);
+    font-family: 'Audiowide', sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#main-header {
+    text-align: center;
+    background-color: var(--piff);
+    padding-top: 2rem;
+}
+
+#main-header h1 {
+    font-size: 60px;
+    background-color: var(--piff);
+}
+
+nav {
+    background-color: var(--piff);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 2px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+nav a.current {
+    border-bottom: 2px solid var(--wakeup);
+    color: var(--wakeup);
+    font-size: large;
+}
+
+nav li a:focus-visible,
+nav li a:hover {
+    color: var(--harmony);
+}
+
+footer {
+    font-weight: bold;
+    font-size: 90%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--text);
+    color: var(--bg);
+}
