@@ -1,1 +1,35 @@
-<p>converter works!</p>
+<h2>Konvertera med forms</h2>
+<p>Här använder jag Angulars inbyggda formulärfunktion för
+    att skapa två konverterare: en som omvandlar meter till 
+    fot och en som omvandlar fahrenheit till celsius och vice versa.
+</p>
+<h3>Meter till fot, fot till meter</h3>
+<div class="formInput">
+<div>
+    <label for="length">Längd:</label>
+    <input type="number" id="length" [(ngModel)]="length">
+</div>
+
+</div>
+<div class="convertBtns">
+    <button (click)="meterToFoot()">Meter till fot</button>
+    <button (click)="footToMeter()">Fot till meter</button>
+</div>
+<div class="results">
+    <p><strong>Resultat: {{ result1 }}</strong></p>
+</div>
+
+<h3>Celsius till fahrenheit, fahrenheit till celsius</h3>
+<div class="formInput">
+<div>
+    <label for="temp">Temperatur:</label>
+    <input type="number" id="temp" [(ngModel)]="temp">
+</div>
+</div>
+<div class="convertBtns">
+    <button (click)="celsiusToFahrenheit()">Celsius till fahrenheit</button>
+    <button (click)="fahrenheitToCelsius()">Fahrenheit till celsius</button>
+</div>
+<div class="results">
+    <p><strong>Resultat: {{ result2 }}</strong></p>
+</div>
