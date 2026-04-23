@@ -54,6 +54,10 @@ main {
     background-color: var(--piff);
 }
 
+h2 {
+    margin-bottom: 1rem;
+}
+
 h3,
 .formInput,
 .convertBtns,

@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './index.html',
   styleUrl: './index.css',
 })
-export class Index {}
+export class Index {
+  coolimage= "/images/hackur.jpg";
+}
