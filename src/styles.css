@@ -64,10 +64,13 @@ footer {
     color: var(--bg);
 }
 
+h3,
 .formInput,
 .convertBtns,
 .results {
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
@@ -87,8 +90,7 @@ input {
 }
 
 .convertBtns {
-    display: flex;
-    justify-content: center;
+
     gap: 1rem;
 }
 
@@ -106,7 +108,7 @@ input {
     background-color: var(--wakeup);
 }
 
-.results{
+.results {
     font-size: larger;
     color: var(--wakeup);
 }
