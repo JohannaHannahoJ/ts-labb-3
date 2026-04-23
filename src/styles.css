@@ -54,16 +54,6 @@ main {
     background-color: var(--piff);
 }
 
-footer {
-    font-weight: bold;
-    font-size: 90%;
-    text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: var(--text);
-    color: var(--bg);
-}
-
 h3,
 .formInput,
 .convertBtns,
