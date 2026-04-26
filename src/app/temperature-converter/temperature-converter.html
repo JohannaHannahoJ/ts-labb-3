@@ -1,0 +1,16 @@
+<div class="card">
+    <h3>Celsius till fahrenheit, fahrenheit till celsius</h3>
+    <div class="formInput">
+        <div>
+            <label for="temp">Temperatur:</label>
+            <input type="number" id="temp" [(ngModel)]="temp">
+        </div>
+    </div>
+    <div class="convertBtns">
+        <button (click)="celsiusToFahrenheit()">°C till °F</button>
+        <button (click)="fahrenheitToCelsius()">°F till °C</button>
+    </div>
+    <div class="results">
+        <p><strong>Resultat: {{ result }}</strong></p>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+nav {
+    background-color: var(--piff);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 2px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+nav a.current {
+    border-bottom: 2px solid var(--wakeup);
+    color: var(--wakeup);
+    font-size: large;
+}
+
+nav li a:focus-visible,
+nav li a:hover {
+    color: var(--harmony);
+}

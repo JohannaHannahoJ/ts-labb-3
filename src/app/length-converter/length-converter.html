@@ -1,0 +1,17 @@
+<div class="card">
+    <h3>Meter till fot, fot till meter</h3>
+    <div class="formInput">
+        <div>
+            <label for="length">Längd:</label>
+            <input type="number" id="length" [(ngModel)]="length">
+        </div>
+
+    </div>
+    <div class="convertBtns">
+        <button (click)="meterToFoot()">Meter till fot</button>
+        <button (click)="footToMeter()">Fot till meter</button>
+    </div>
+    <div class="results">
+        <p><strong>Resultat: {{ result }}</strong></p>
+    </div>
+</div>

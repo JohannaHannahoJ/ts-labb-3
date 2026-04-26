@@ -54,45 +54,59 @@ main {
     background-color: var(--piff);
 }
 
-nav {
-    background-color: var(--piff);
-    padding: 1rem;
+h2 {
+    margin-bottom: 1rem;
 }
 
-nav ul {
-    list-style: none;
+p {
+    margin-bottom: 1.5rem;
+}
 
+h3,
+.formInput,
+.convertBtns,
+.results {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
-    gap: 20px;
-
-    padding: 2px;
-
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--text);
-    font-weight: 600;
+.card {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: solid 2px var(--harmony);
 }
 
-nav a.current {
-    border-bottom: 2px solid var(--wakeup);
-    color: var(--wakeup);
-    font-size: large;
-}
-
-nav li a:focus-visible,
-nav li a:hover {
-    color: var(--harmony);
-}
-
-footer {
-    font-weight: bold;
-    font-size: 90%;
+input {
+    padding: 0.2rem;
+    font-family: inherit;
     text-align: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: var(--text);
-    color: var(--bg);
+    border: solid 2px var(--harmony);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.convertBtns {
+
+    gap: 1rem;
+}
+
+.convertBtns button {
+    padding: 0.5rem;
+    background-color: var(--harmony);
+    color: white;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.convertBtns button:hover {
+    background-color: var(--wakeup);
+}
+
+.results {
+    font-size: larger;
+    color: var(--wakeup);
 }
